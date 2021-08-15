@@ -58,8 +58,5 @@ public class LambdaWithCustomObject {
         System.out.println("user name list with method reference "+ userNamesWithMethodReference);
 
 
-
-
-
     }
 }
