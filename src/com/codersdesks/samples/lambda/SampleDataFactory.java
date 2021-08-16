@@ -4,7 +4,9 @@ import com.codersdesks.samples.dto.User;
 
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class SampleDataFactory {
 
@@ -17,4 +19,15 @@ public class SampleDataFactory {
                 new User("Jatin", 14, LocalDate.parse("2019-03-26"), Arrays.asList("5764576889", "44646464666"))
         );
     }
+
+    static Map<String,Integer> getNumbersMap(){
+        Map<String,Integer> numbersMap = new HashMap<>();
+        numbersMap.put("Two",2);
+        numbersMap.put("One",1);
+        numbersMap.put("Six",6);
+        numbersMap.put("Nine",9);
+        return  numbersMap;
+    }
+
+
 }
