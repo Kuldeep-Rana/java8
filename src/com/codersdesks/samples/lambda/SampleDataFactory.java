@@ -10,7 +10,7 @@ import java.util.Map;
 
 public class SampleDataFactory {
 
-    static List<User> getUsers(){
+  public  static List<User> getUsers(){
 
         return Arrays.asList(
                 new User("Kuldeep", 32, LocalDate.parse("2020-05-21"), Arrays.asList("5435435636", "3465346456")),
@@ -20,7 +20,7 @@ public class SampleDataFactory {
         );
     }
 
-    static Map<String,Integer> getNumbersMap(){
+   public static Map<String,Integer> getNumbersMap(){
         Map<String,Integer> numbersMap = new HashMap<>();
         numbersMap.put("Two",2);
         numbersMap.put("One",1);

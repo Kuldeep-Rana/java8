@@ -33,6 +33,22 @@ public class User {
         return mobileNumbers;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setJoinedOn(LocalDate joinedOn) {
+        this.joinedOn = joinedOn;
+    }
+
+    public void setMobileNumbers(List<String> mobileNumbers) {
+        this.mobileNumbers = mobileNumbers;
+    }
+
     @Override
     public String toString() {
         return "User{" +
