@@ -48,6 +48,11 @@ public class SortingMap {
         usersMap.entrySet().stream().sorted(Map.Entry.comparingByKey(Comparator.comparing(User::getAge)))
                 .forEach(System.out::println);
 
+        List<User> usersNew = SampleDataFactory.getUsers();
+        Function<User, String> nameList = User::getName;
+        usersNew.stream().map(nameList).collect(Collectors.toList()).forEach(System.out::println);
+
+
 
     }
 }

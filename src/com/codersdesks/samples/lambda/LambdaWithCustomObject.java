@@ -2,6 +2,7 @@ package com.codersdesks.samples.lambda;
 
 import com.codersdesks.samples.dto.User;
 
+import java.net.Inet4Address;
 import java.time.LocalDate;
 import java.util.Collections;
 import java.util.Comparator;
@@ -12,8 +13,26 @@ import java.util.stream.Collectors;
 
 public class LambdaWithCustomObject {
 
+   static void add(int a){
+
+    }
+
+    static void add(Integer a){
+
+    }
+
+
     public static void main(String[] args) {
 
+    //    add(10);
+
+        String s1, s2;
+        s1 = "kuldeep";
+        s2 = new String("kuldeep");
+        System.out.println(s1 == s2);
+        s2 = s2.intern();
+        System.out.println(s1 == s2);
+        System.exit(0);
         List<User> users = SampleDataFactory.getUsers();
 
         System.out.println("users "+users);
