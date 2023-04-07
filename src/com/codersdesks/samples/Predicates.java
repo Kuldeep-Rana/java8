@@ -1,6 +1,9 @@
 package com.codersdesks.samples;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class Predicates {
 
@@ -24,6 +27,9 @@ public class Predicates {
         Predicate<Integer> andPredicate = greaterThanOne.and(lessThanHundred);
 
         System.out.println(andPredicate.test(100));
+
+        List<User> list = new ArrayList<>();
+        list.stream().filter(e->e.getId()<10 && !e.getName().equals("kuldeep")).collect(Collectors.toList());
 
     }
 }
