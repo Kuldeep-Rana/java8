@@ -3,7 +3,7 @@ package com.codersdesks.samples.stream;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class ConvertListIntoMapBaedOnFilter {
+public class ConvertListIntoMapBasedOnFilter {
     public static void main(String[] args) {
         List<Integer> empData = Arrays.asList(1000, 2000, 3000, 5000, 8000, 90000, 11000, 12000);
         // option 1

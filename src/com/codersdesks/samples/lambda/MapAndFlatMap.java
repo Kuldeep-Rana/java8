@@ -49,5 +49,11 @@ public class MapAndFlatMap {
         List<String> mobileNumbers = users.stream().flatMap(user -> user.getMobileNumbers().stream()).collect(Collectors.toList());
        System.out.println("mobileNumbers "+mobileNumbers);
 
+       //Given a list of sentences, split them into words and create a list of words using flatMap.
+        var sentences  = List.of("Given a list of sentences","split them into words and create a ","list of words using flatMap");
+
+        var listByWords = sentences.stream().flatMap(sen -> Arrays.stream(sen.split("\\ "))).toList();
+        System.out.println(listByWords);
+
     }
 }
