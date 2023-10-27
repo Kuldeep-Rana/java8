@@ -33,7 +33,13 @@ public class ArrayProblemsWithStream {
         System.out.println(duplicateElms);
 
 
-
-
+        // reverse string
+        String s = "kuldeep";
+        char [] charArr = s.toCharArray();
+        char [] reverse = new char[s.length()];
+        for(int i = charArr.length-1; i >=0; i--){
+            reverse[(charArr.length-1) -i] = charArr[i];
+        }
+        System.out.println("reverse "+new String(reverse));
     }
 }

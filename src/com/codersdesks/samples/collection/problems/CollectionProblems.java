@@ -14,6 +14,19 @@ public class CollectionProblems {
 
         System.out.println("findIntersection "+findIntersection(numbers,numbers1));
         System.out.println("findFrequency "+findFrequency(numbers));
+
+        // LinkedHashMap Access order example
+        var linkedMap = new LinkedHashMap<Integer, String>(16, 0.75f, true);
+
+        linkedMap.put(1, "One");
+        linkedMap.put(2, "Two");
+        linkedMap.put(3, "Three");
+        linkedMap.entrySet().stream().forEach(System.out::println);
+        linkedMap.put(4, "Four");
+        linkedMap.entrySet().stream().forEach(System.out::println);
+
+        linkedMap.get(1);
+        linkedMap.entrySet().stream().forEach(System.out::println);
     }
 
 
